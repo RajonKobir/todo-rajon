@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Rajon</title>
+<link rel="icon" href="/assets/todo.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/assets/styles.css" type="text/css">
+
+
+</head>
+<body>
+    <h1>My Todo List</h1>
+    <div id="todo-table">
+        <form>
+            <input type="text" name="item" placeholder="Add a new item..." required>
+            <button type="submit">Add Item</button>
+        </form>
+        <ul>
+            <% for(var i=0; i < todo.length; i++){ %>
+                <li><%= todo[i].item %></li>
+          <%  } %>
+        </ul>
+    </div>
+
+
+    <script src="/assets/todo-list.js"></script>
+</body>
+</html>
